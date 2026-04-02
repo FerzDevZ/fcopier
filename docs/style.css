@@ -1,0 +1,99 @@
+:root {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+    --accent-color: #00f2fe;
+    --card-bg: #111111;
+    --border-color: #333333;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.mono-nav {
+    border-bottom: 2px solid var(--text-color);
+    padding: 20px 0;
+}
+
+.mono-btn {
+    background: transparent;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+    border-radius: 0;
+    padding: 10px 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.mono-btn:hover {
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #222;
+    border-bottom: 1px solid var(--border-color);
+    font-weight: 600;
+}
+
+pre {
+    background-color: #111;
+    color: #eee;
+    padding: 15px;
+    border-left: 4px solid var(--text-color);
+    overflow-x: auto;
+}
+
+.sidebar {
+    height: 100vh;
+    border-right: 1px solid var(--border-color);
+    padding-top: 20px;
+    position: sticky;
+    top: 0;
+}
+
+.sidebar a {
+    color: #999;
+    text-decoration: none;
+    display: block;
+    padding: 8px 0;
+    transition: color 0.2s;
+}
+
+.sidebar a:hover, .sidebar a.active {
+    color: var(--text-color);
+}
+
+.hero {
+    padding: 100px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.highlight-box {
+    border: 2px dashed var(--border-color);
+    padding: 30px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.lang-switch {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+[data-lang="id"] { display: none; }
+[data-lang="en"] { display: block; }
+
+body.lang-id [data-lang="id"] { display: block; }
+body.lang-id [data-lang="en"] { display: none; }
