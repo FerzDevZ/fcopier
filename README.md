@@ -5,6 +5,8 @@
 
 FCopier adalah sebuah framework teknis yang dirancang untuk kebutuhan analisis infrastruktur web, riset keamanan, dan preservasi aset digital secara presisi. Dibangun menggunakan teknologi Playwright, proyek ini menawarkan kontrol granular terhadap ekstraksi data pada situs web dinamis yang kompleks.
 
+Dokumentasi Resmi: [https://ferzdevz.github.io/fcopier/](https://ferzdevz.github.io/fcopier/)
+
 ## Filosofi dan Kapabilitas
 
 FCopier dikembangkan untuk mengisi celah antara alat *cloning* tradisional dan kebutuhan forensik modern. Beberapa kapabilitas utama meliputi:

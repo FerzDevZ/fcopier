@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCopier | Technical Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="lang-en theme-dark">
+    
+    <header class="glass-header">
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; max-width: 1440px; margin: 0 auto;">
+            <div class="logo-group" style="display: flex; align-items: center;">
+                <button id="mobile-menu-toggle" class="me-3">≡</button>
+                <a href="#" style="color: #fff; text-decoration: none; font-weight: 600; letter-spacing: 2px;">FCOPIER.</a>
+            </div>
+            <div class="nav-right" style="display: flex; align-items: center;">
+                <a href="#" id="lang-toggle" style="color: #a1a1aa; text-decoration: none; font-size: 0.8rem; text-transform: uppercase; margin-right: 30px; letter-spacing: 1px;">Switch Language</a>
+                <a href="https://github.com/FerzDevZ/fcopier" class="btn-noir">Repository</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="layout-wrapper">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar-nav">
+            <nav>
+                <div style="font-size: 0.7rem; color: #52525b; letter-spacing: 2px; margin-bottom: 20px; text-transform: uppercase;">Documentation</div>
+                <a href="#introduction" class="nav-link-custom active" data-target="introduction">
+                    <span data-lang="en">Introduction</span>
+                    <span data-lang="id">Pendahuluan</span>
+                </a>
+                <a href="#installation" class="nav-link-custom" data-target="installation">
+                    <span data-lang="en">Installation</span>
+                    <span data-lang="id">Instalasi</span>
+                </a>
+                <a href="#cloning" class="nav-link-custom" data-target="cloning">
+                    <span data-lang="en">Core Cloning</span>
+                    <span data-lang="id">Fitur Cloning</span>
+                </a>
+                <a href="#security" class="nav-link-custom" data-target="security">
+                    <span data-lang="en">Audit & Security</span>
+                    <span data-lang="id">Audit & Keamanan</span>
+                </a>
+                <a href="#exporting" class="nav-link-custom" data-target="exporting">
+                    <span data-lang="en">Exporting</span>
+                    <span data-lang="id">Export Konten</span>
+                </a>
+                <a href="#mocking" class="nav-link-custom" data-target="mocking">
+                    <span data-lang="en">API Mocking</span>
+                    <span data-lang="id">Simulasi API</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            
+            <section id="introduction">
+                <h1 class="hero-title">FCOPIER.</h1>
+                <p style="font-size: 1.25rem; color: var(--text-secondary); max-width: 700px;">
+                    <span data-lang="en">High-precision framework for website analysis, forensic cloning, and automated security auditing.</span>
+                    <span data-lang="id">Framework presisi tinggi untuk analisis situs web, cloning forensik, dan audit keamanan otomatis.</span>
+                </p>
+                <div style="margin-top: 40px;">
+                    <a href="https://linktr.ee/ferzpedia" class="btn-noir" style="margin-right: 15px;">Technical Services</a>
+                    <a href="#installation" class="btn-outline">Getting Started</a>
+                </div>
+            </section>
+
+            <!-- 01. Installation -->
+            <section id="installation">
+                <h2 class="section-title">01. Installation</h2>
+                <p style="color: var(--text-secondary);">
+                    <span data-lang="en">Ensure you have Node.js 18+ installed on your system. Run the installer to initialize the environment.</span>
+                    <span data-lang="id">Pastikan Node.js 18+ terinstal di sistem Anda. Jalankan installer untuk inisialisasi environment.</span>
+                </p>
+                <div class="code-wrapper">
+                    <button class="copy-btn">Copy</button>
+                    <pre><code>git clone https://github.com/FerzDevZ/fcopier.git
+cd fcopier
+bash install.sh</code></pre>
+                </div>
+            </section>
+
+            <!-- 02. Core Cloning -->
+            <section id="cloning">
+                <h2 class="section-title">02. Core Cloning</h2>
+                <p style="color: var(--text-secondary);">
+                    <span data-lang="en">Granular data extraction with proxy support and intelligent sync capabilities.</span>
+                    <span data-lang="id">Ekstraksi data granular dengan dukungan proxy dan fitur sinkronisasi cerdas.</span>
+                </p>
+                <div class="code-wrapper">
+                    <button class="copy-btn">Copy</button>
+                    <pre><code># Basic clone execution
+fcopier clone https://example.com
+
+# High-stealth mode through Proxy
+fcopier clone https://example.com --proxy http://proxy.host --ua "Browser Agent"</code></pre>
+                </div>
+            </section>
+
+            <!-- 03. Audit & Security -->
+            <section id="security">
+                <h2 class="section-title">03. Audit & Security</h2>
+                <p style="color: var(--text-secondary);">
+                    <span data-lang="en">Automated forensic scanning to identify credential leaks (AWS, GitHub, Slack) and PII.</span>
+                    <span data-lang="id">Pemindaian forensik otomatis untuk identifikasi kebocoran kredensial dan paparan data sensitif.</span>
+                </p>
+                <div class="code-wrapper">
+                    <button class="copy-btn">Copy</button>
+                    <pre><code># Scan an existing directory
+fcopier scan ./cloned_site
+
+# Integrated real-time audit
+fcopier clone https://example.com --scan</code></pre>
+                </div>
+            </section>
+
+            <!-- 04. Exporting -->
+            <section id="exporting">
+                <h2 class="section-title">04. Exporting</h2>
+                <p style="color: var(--text-secondary);">
+                    <span data-lang="en">Transform live web pages into professional documentation assets.</span>
+                    <span data-lang="id">Transformasi halaman web menjadi aset dokumentasi profesional.</span>
+                </p>
+                <div class="code-wrapper">
+                    <button class="copy-btn">Copy</button>
+                    <pre><code># PDF Document Export
+fcopier export https://example.com --type pdf
+
+# Portable Single-File HTML
+fcopier export https://example.com --type singlefile</code></pre>
+                </div>
+            </section>
+
+            <!-- 05. API Mocking -->
+            <section id="mocking">
+                <h2 class="section-title">05. API Mocking</h2>
+                <p style="color: var(--text-secondary);">
+                    <span data-lang="en">Simulate captured network traffic locally with the built-in enterprise dashboard.</span>
+                    <span data-lang="id">Simulasi lalu lintas jaringan lokal melalui dashboard enterprise yang terpasang.</span>
+                </p>
+                <div class="code-wrapper">
+                    <button class="copy-btn">Copy</button>
+                    <pre><code># Launch server with dashboard
+fcopier serve ./cloned_site --open</code></pre>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer style="margin-top: 100px; padding: 40px 0; border-top: 1px solid var(--border-dim); display: flex; justify-content: space-between; align-items: center;">
+                <div style="font-size: 0.85rem; color: #52525b;">© 2026 FerzDevZ. Digital Preservation Framework.</div>
+                <div style="display: flex; gap: 20px;">
+                    <a href="https://linktr.ee/ferzpedia" style="color: #fff; text-decoration: none; font-size: 0.75rem; text-transform: uppercase;">Inquiry</a>
+                    <a href="https://github.com/FerzDevZ/fcopier" style="color: #fff; text-decoration: none; font-size: 0.75rem; text-transform: uppercase;">Source</a>
+                </div>
+            </footer>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
